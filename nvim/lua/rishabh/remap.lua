@@ -1,6 +1,6 @@
+vim.g.mapleader = " "
+
 vim.keymap.set("n", "<leader>.", vim.cmd.Ex)  -- netrw
-vim.keymap.set("n", "<C-s>", ":update<CR>")   -- save if changes
-vim.keymap.set("i", "<C-s>", "<Esc>:update<CR>i")
 
 
 -- use 'J' and 'K' to move highligted text down and up
