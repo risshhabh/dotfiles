@@ -1,0 +1,4 @@
+# dotfiles
+
+added:
+* nvim
