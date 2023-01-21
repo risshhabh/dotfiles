@@ -47,4 +47,12 @@ vim.opt.updatetime = 50  -- fast update time
 
 vim.opt.colorcolumn = "80"
 
+-- Neovide GUI configurations -- https://neovide.dev/configuration.html
+vim.opt.guifont = "Fira Code Light:h24"
+vim.g.neovide_hide_mouse_when_typing = true
+vim.g.neovide_remember_window_size = false
+vim.g.neovide_cursor_animation_length = 0.05
+vim.g.neovide_refresh_rate_idle = 5  -- 5 fps when idle
+
+
 vim.g.mapleader = " " --  leader key
