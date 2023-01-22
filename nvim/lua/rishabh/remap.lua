@@ -7,6 +7,20 @@ vim.keymap.set("n", "<leader>.", vim.cmd.Ex)  -- netrw
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
+-- match braces because vim doesn't
+vim.keymap.set("i", "{<CR>", "{<CR>}<Esc>ko")
+vim.keymap.set("i", "(<CR>", "(<CR>)<Esc>ko")
+vim.keymap.set("i", "[<CR>", "[<CR>]<Esc>ko")
+
+-- TODO make this work 😶‍🌫️
+-- mark current cursor position
+-- go to top of file and format to bottom
+-- go to top of file and fix indents to 4-space
+-- fix clang braces to allman braces
+-- write changes
+-- return to mark
+vim.keymap.set("n", "<leader>w", ":mark `<CR>gggqGgg=G:%s//\r/g<CR>:w<CR>``")
+
 -- 'J' in normal mode appends next line to current (with space separation)
 -- This keeps the cursor at the same place so this may be repeatedly executed
 vim.keymap.set("n", "J", "mzJ`z")
@@ -37,4 +51,3 @@ vim.keymap.set("v", "<leader>d", "\"_d")
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 -- make current file an executable
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
-
