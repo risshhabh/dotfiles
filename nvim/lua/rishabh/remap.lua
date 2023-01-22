@@ -12,14 +12,14 @@ vim.keymap.set("i", "{<CR>", "{<CR>}<Esc>ko")
 vim.keymap.set("i", "(<CR>", "(<CR>)<Esc>ko")
 vim.keymap.set("i", "[<CR>", "[<CR>]<Esc>ko")
 
--- TODO make this work 😶‍🌫️
+-- TODO make this work 🤒
 -- mark current cursor position
 -- go to top of file and format to bottom
 -- go to top of file and fix indents to 4-space
--- fix clang braces to allman braces
+-- TODO fix clang braces to allman braces 
 -- write changes
 -- return to mark
-vim.keymap.set("n", "<leader>w", ":mark `<CR>gggqGgg=G:%s//\r/g<CR>:w<CR>``")
+vim.keymap.set("n", "<leader>w", ":mark `<CR>gggqGgg=G:w<CR>``")
 
 -- 'J' in normal mode appends next line to current (with space separation)
 -- This keeps the cursor at the same place so this may be repeatedly executed
