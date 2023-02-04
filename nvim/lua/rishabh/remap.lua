@@ -1,6 +1,6 @@
 vim.g.mapleader = " "
 
-vim.keymap.set("n", "<leader>.", vim.cmd.Ex)  -- netrw
+vim.keymap.set("n", "<leader>.", vim.cmd.Ex) -- netrw
 
 
 -- use 'J' and 'K' to move highligted text down and up
@@ -13,13 +13,13 @@ vim.keymap.set("i", "(<CR>", "(<CR>)<Esc>ko")
 vim.keymap.set("i", "[<CR>", "[<CR>]<Esc>ko")
 
 -- TODO make this work 🤒
--- mark current cursor position
+-- TODO mark current cursor position
 -- go to top of file and format to bottom
 -- go to top of file and fix indents to 4-space
--- TODO fix clang braces to allman braces 
+-- TODO fix clang braces to allman braces
 -- write changes
--- return to mark
-vim.keymap.set("n", "<leader>w", ":mark `<CR>gggqGgg=G:w<CR>``")
+-- TODO return to mark
+-- vim.keymap.set("n", "<leader>w", "gggqGgg=G:w<CR>g;")
 
 -- 'J' in normal mode appends next line to current (with space separation)
 -- This keeps the cursor at the same place so this may be repeatedly executed
