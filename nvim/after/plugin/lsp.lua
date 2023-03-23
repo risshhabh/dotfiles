@@ -4,10 +4,10 @@ local lsp = require('lsp-zero')
 
 lsp.preset('recommended')
 
-lsp.ensure_installed({-- :Mason to get full list of language servers
-    'clangd',         -- C/C++
-    'sumneko_lua',    -- Lua
-    'pyright',        -- Python
+lsp.ensure_installed({     -- :Mason to get full list of language servers
+    'clangd',              -- C/C++
+    -- 'lua-language-server', -- FIX Lua
+    'pyright',             -- Python
 })
 
 
